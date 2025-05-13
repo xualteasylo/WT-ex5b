@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration - Multiple Attendees</title>
+</head>
+<body>
+    <h1>Event Registration Form (Multiple Attendees)</h1>
+    <form action="SessionEventRegistrationServlet" method="post">
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Age:</label><br>
+        <input type="number" name="age" required><br><br>
+
+        <label>Number of Tickets:</label><br>
+        <input type="number" name="tickets" min="1" required><br><br>
+
+        <input type="submit" name="action" value="Add Another Attendee">
+        <input type="submit" name="action" value="Confirm Registration">
+    </form>
+</body>
+</html>
